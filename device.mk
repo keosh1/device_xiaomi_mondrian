@@ -26,7 +26,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 
-# Platform
+# Inherit Sign Keys Platform
+$(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
+
 TARGET_BOARD_PLATFORM := taro
 
 # A/B
