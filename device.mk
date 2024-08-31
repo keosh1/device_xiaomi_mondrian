@@ -29,6 +29,9 @@ $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 # Inherit Sign Keys Platform
 $(call inherit-product-if-exists, vendor/lineage-priv/keys/keys.mk)
 
+# Inherit Google Camera
+$(call inherit-product-if-exists, vendor/Gcam/config.mk)
+
 TARGET_BOARD_PLATFORM := taro
 
 # A/B
