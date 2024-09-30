@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_mondrian.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_mondrian-user \
+    aosp_mondrian-userdebug \
+    aosp_mondrian-eng
