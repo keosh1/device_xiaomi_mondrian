@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/mondrian/device.mk)
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mondrian
+PRODUCT_NAME := aosp_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
 
@@ -28,13 +28,3 @@ BUILD_FINGERPRINT := POCO/mondrian_global/mondrian:12/SKQ1.230401.001/V816.0.8.0
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_BOOT_ANIMATION_RES := 1440
-
-# RisingOS
-WITH_GMS := true
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_CHIPSET="SM8475" \
-    RISING_MAINTAINER="keosh"
